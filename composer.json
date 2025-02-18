@@ -1,10 +1,10 @@
 {
-  "name": "vsavritsky/bitrix-models",
+  "name": "ogdev/bitrix-models",
   "description": "Библиотека для работы с инфоблоками, хайлоадами и т.п как сущностями",
   "type": "library",
   "require": {
     "php": ">=8.0",
-    "vsavritsky/bitrix-filter-builder": "*",
+    "ogdev/bitrix-filter-builder": "*",
     "ext-mbstring": "*",
     "ext-json": "*"
   },
