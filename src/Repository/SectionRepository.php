@@ -12,6 +12,7 @@ use BitrixModels\Model\Sort;
 use BitrixModels\QueryBuilder\SectionQueryBuilder;
 use CIBlock;
 use CIBlockElement;
+use CIBlockSection;
 
 class SectionRepository extends BaseRepository
 {
@@ -121,11 +122,35 @@ class SectionRepository extends BaseRepository
 
     public function add($fields = [], $properties = [])
     {
+        $section = new CIBlockSection();
+
+        $arFields = array_merge([
+            'ACTIVE' => 'Y',
+        ], $fields);
+
+        if (!empty($properties)) {
+            $arFields['UF_*'] = $properties;
+        }
+
+        $sectionId = $section->Add($arFields);
+
+        if ($sectionId) {
+            return $sectionId;
+        }
+
         return false;
     }
 
     public function update($id, $fields = [], $properties = [])
     {
-        return null;
+        $section = new CIBlockSection();
+
+        if (!empty($properties)) {
+            $fields['UF_*'] = $properties;
+        }
+
+        $result = $section->Update($id, $fields);
+
+        return $result ? true : false;
     }
 }
