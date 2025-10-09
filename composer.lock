@@ -4,26 +4,27 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "30e0c673432919cc7b626df20c0bb9d5",
+    "content-hash": "e59f13225134cc247dbd54340acd4a96",
     "packages": [
         {
-            "name": "vsavritsky/bitrix-filter-builder",
-            "version": "0.0.5",
+            "name": "ogdev/bitrix-filter-builder",
+            "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://github.com/vsavritsky/bitrix-filter-builder.git",
-                "reference": "1c9afbc5f09a4ab5f95567a272f83830bc839f96"
+                "url": "https://github.com/admitriev-og/bitrix-filter-builder.git",
+                "reference": "1d02247aec3ddd9fb671e880aff954262d04da7e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vsavritsky/bitrix-filter-builder/zipball/1c9afbc5f09a4ab5f95567a272f83830bc839f96",
-                "reference": "1c9afbc5f09a4ab5f95567a272f83830bc839f96",
+                "url": "https://api.github.com/repos/admitriev-og/bitrix-filter-builder/zipball/1d02247aec3ddd9fb671e880aff954262d04da7e",
+                "reference": "1d02247aec3ddd9fb671e880aff954262d04da7e",
                 "shasum": ""
             },
             "require": {
                 "ext-json": "*",
                 "php": ">=7.1"
             },
+            "default-branch": true,
             "type": "library",
             "autoload": {
                 "psr-4": {
@@ -33,23 +34,22 @@
             "notification-url": "https://packagist.org/downloads/",
             "description": "Библиотека для простого создания фильтра",
             "support": {
-                "issues": "https://github.com/vsavritsky/bitrix-filter-builder/issues",
-                "source": "https://github.com/vsavritsky/bitrix-filter-builder/tree/0.0.5"
+                "source": "https://github.com/admitriev-og/bitrix-filter-builder/tree/master"
             },
-            "time": "2024-04-07T21:11:48+00:00"
+            "time": "2025-02-18T08:42:12+00:00"
         }
     ],
     "packages-dev": [],
     "aliases": [],
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "stability-flags": [],
-    "prefer-stable": false,
+    "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
-        "php": ">=7.4",
+        "php": ">=8.0",
         "ext-mbstring": "*",
         "ext-json": "*"
     },
     "platform-dev": [],
-    "plugin-api-version": "2.3.0"
+    "plugin-api-version": "2.6.0"
 }

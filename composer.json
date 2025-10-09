@@ -8,7 +8,8 @@
     "ext-mbstring": "*",
     "ext-json": "*"
   },
-  "minimum-stability": "stable",
+  "minimum-stability": "dev",
+  "prefer-stable": true,
   "autoload": {
     "psr-4": {
       "BitrixModels\\": "src"
