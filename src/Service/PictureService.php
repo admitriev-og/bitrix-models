@@ -146,7 +146,12 @@ class PictureService
             $compression
         );
 
-        $link = $file['src'];
+        if (strpos($file['src'], '/resize_cache/') === false) {
+            $arFile = CFile::GetFileArray($imgId);
+            $link = $arFile['SRC'];
+        } else {
+            $link = $file['src'];
+        }
 
         if ($fullPath) {
             $link = UrlService::getFullUrl($link);
